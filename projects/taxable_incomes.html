@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+	<!-- Conditional Statements for "Introduction to Javascript"
+		10-152-117
+		Fox Valley Technical College
+		Author:  Jeff Allaire
+		Date: 09/30/2014
+		-->
+		
+	<meta charset="UTF-8"/>		
+	<title>Conditional Statements</title>
+		
+	</head>
+	
+	<body>
+		
+		
+		<script type="text/javascript">
+			
+			//Variable declarations
+			
+			var incomeAmount;
+			var noTax;
+			var taxPercent1;
+			var taxPercent2;
+			var taxIncome1;
+			var taxIncome2;
+			var tax1;
+			var tax2;
+			var myIncome;
+			
+			//Assignments
+			
+			noTax = 1500;
+			taxIncome1 = 25000;
+			taxPercent1 = .15;
+			taxIncome2 = 40000;
+			taxPercent2 = .20;
+			
+			incomeAmount = prompt("Enter your current income", "");
+			myIncome = parseInt(incomeAmount);
+			
+			
+			//Logic and Output
+			
+			if (myIncome <= noTax)
+			
+			{alert("This Dollar amount is non-taxable");
+			}
+			
+			if (myIncome > noTax  &&  myIncome <= taxIncome1)
+			{ tax1 = (myIncome * taxPercent1);
+			var mytax1 =parseInt(tax1);
+			
+			document.write ("You will need to pay $" + mytax1 + " on your $" + myIncome + " income.");
+			}
+			
+			if  (myIncome > taxIncome1 && myIncome <= taxIncome2)
+			{tax2 = (myIncome * taxPercent2);
+				var mytax2 = parseFloat(tax2);
+			document.write ("You will need to pay $" + mytax2 + " on your $" + myIncome + " income.");	
+				}
+				
+			if  (myIncome > taxIncome2) 
+			{alert("I do not have data to calculate the tax on this income.");}		
+		
+		
+			
+			
+			</script>
+			
+			</body>
+			
+			</html>
+			
+			
+			
+
+			
